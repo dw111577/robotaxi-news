@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自動運転・ロボタクシー ニュース</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1f2e 0%, #0f1117 100%);
+      border-bottom: 1px solid #2d3748;
+      padding: 24px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #63b3ed, #76e4f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+    }
+
+    header .subtitle {
+      color: #718096;
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    .update-info {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #1a2332;
+      border: 1px solid #2d3748;
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.78rem;
+      color: #68d391;
+      margin-top: 10px;
+    }
+
+    .update-info::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #68d391;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    .category-section {
+      margin-bottom: 36px;
+    }
+
+    .category-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #718096;
+      padding: 0 0 12px 0;
+      border-bottom: 1px solid #2d3748;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .category-icon {
+      font-size: 1rem;
+    }
+
+    .news-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .news-card {
+      background: #1a1f2e;
+      border: 1px solid #2d3748;
+      border-radius: 12px;
+      padding: 18px 20px;
+      transition: border-color 0.2s, transform 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+
+    .news-card:hover {
+      border-color: #4a90d9;
+      transform: translateY(-2px);
+    }
+
+    .news-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .source-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      background: #1e3a5f;
+      color: #63b3ed;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .news-date {
+      font-size: 0.72rem;
+      color: #4a5568;
+    }
+
+    .news-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .news-summary {
+      font-size: 0.875rem;
+      color: #a0aec0;
+      line-height: 1.7;
+    }
+
+    .news-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.78rem;
+      color: #63b3ed;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .news-link:hover { text-decoration: underline; }
+
+    .no-news {
+      text-align: center;
+      color: #4a5568;
+      padding: 60px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #4a5568;
+      font-size: 0.78rem;
+      border-top: 1px solid #2d3748;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .news-title { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚗 自動運転・ロボタクシー ニュース</h1>
+  <p class="subtitle">World Autonomous Driving News — AI Daily Digest</p>
+  <div class="update-info">最終更新: 2026-03-17 09:00 JST</div>
+</header>
+
+<main>
+
+  <div class="category-section">
+    <h2 class="category-title"><span class="category-icon">🇺🇸</span> Waymo / 米国</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-card-meta">
+          <span class="source-tag">Reuters</span>
+          <span class="news-date">2026-03-17</span>
+        </div>
+        <div class="news-title">Waymo、ロサンゼルスでのサービスエリアを大幅拡大</div>
+        <div class="news-summary">GoogleのウェイモはLA市内のロボタクシーサービス対象エリアを従来の2倍以上に拡大すると発表。2026年Q2までに完全商用展開を目指す方針を明らかにした。</div>
+        <a href="#" class="news-link">元記事を読む →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <h2 class="category-title"><span class="category-icon">⚡</span> Tesla / EV各社</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-card-meta">
+          <span class="source-tag">TechCrunch</span>
+          <span class="news-date">2026-03-17</span>
+        </div>
+        <div class="news-title">Teslaのロボタクシー「Cybercab」、量産体制の詳細が明らかに</div>
+        <div class="news-summary">テスラはCybercabの年産目標を50万台と設定し、テキサス州の新工場で2026年後半から製造開始する計画を確認。完全自動運転ソフトウェアのバージョン13も同時リリース予定。</div>
+        <a href="#" class="news-link">元記事を読む →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <h2 class="category-title"><span class="category-icon">🇯🇵</span> 国内ニュース</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-card-meta">
+          <span class="source-tag">日経新聞</span>
+          <span class="news-date">2026-03-17</span>
+        </div>
+        <div class="news-title">トヨタ・ウーブン、東京都内での自動運転タクシー実証実験を開始</div>
+        <div class="news-summary">トヨタグループのWoven by Toyotaは、渋谷・新宿エリアで一般公道を使った自動運転タクシーの実証実験を開始。規制当局との連携により、国内初の本格的な商用化に向けた試みとなる。</div>
+        <a href="#" class="news-link">元記事を読む →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <h2 class="category-title"><span class="category-icon">📋</span> 規制・政策</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-card-meta">
+          <span class="source-tag">The Verge</span>
+          <span class="news-date">2026-03-16</span>
+        </div>
+        <div class="news-title">米NHTSA、自動運転車の安全基準に関する新規則案を公表</div>
+        <div class="news-summary">米国道路交通安全局(NHTSA)はレベル4・5の自動運転車向けの包括的な安全基準を策定。事故報告義務の強化とリモート監視要件が主な骨子となっている。</div>
+        <a href="#" class="news-link">元記事を読む →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <h2 class="category-title"><span class="category-icon">🌏</span> その他・海外</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-card-meta">
+          <span class="source-tag">South China Morning Post</span>
+          <span class="news-date">2026-03-16</span>
+        </div>
+        <div class="news-title">百度Apollo、深圳・広州で商業運転台数が1万台を突破</div>
+        <div class="news-summary">中国のBaidu(百度)は自動運転プラットフォームApolloGoのロボタクシー台数が深圳・広州の2都市合計で1万台を超えたと発表。1日あたりの乗車数は20万回に達している。</div>
+        <a href="#" class="news-link">元記事を読む →</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>このサイトはClaude AIが毎日自動的にニュースを収集・要約して更新しています。</p>
+  <p style="margin-top:4px;">Powered by Claude + GitHub Pages</p>
+</footer>
+
+</body>
+</html>
