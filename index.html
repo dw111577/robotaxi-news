@@ -6,31 +6,31 @@
   <title>自動運転・ロボタクシー ニュース</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; background: #0f1117; color: #e2e8f0; min-height: 100vh; }
-    header { background: linear-gradient(135deg, #1a1f2e 0%, #0f1117 100%); border-bottom: 1px solid #2d3748; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); }
-    header h1 { font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #63b3ed, #76e4f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; background: #f0f2f5; color: #1a202c; min-height: 100vh; }
+    header { background: linear-gradient(135deg, #e2e8f0 0%, #f0f2f5 100%); border-bottom: 1px solid #cbd5e0; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); }
+    header h1 { font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #2b6cb0, #2c7a7b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     header .subtitle { color: #718096; font-size: 0.82rem; margin-top: 3px; }
-    .update-info { display: inline-flex; align-items: center; gap: 6px; background: #1a2332; border: 1px solid #2d3748; border-radius: 20px; padding: 3px 12px; font-size: 0.75rem; color: #68d391; margin-top: 8px; }
-    .update-info::before { content: ''; width: 6px; height: 6px; background: #68d391; border-radius: 50%; animation: pulse 2s infinite; }
+    .update-info { display: inline-flex; align-items: center; gap: 6px; background: #c6f6d5; border: 1px solid #9ae6b4; border-radius: 20px; padding: 3px 12px; font-size: 0.75rem; color: #276749; margin-top: 8px; }
+    .update-info::before { content: ''; width: 6px; height: 6px; background: #38a169; border-radius: 50%; animation: pulse 2s infinite; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
     .two-col-layout { max-width: 1300px; margin: 0 auto; padding: 20px 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
-    .col-header { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4a5568; padding: 8px 12px; background: #151922; border-radius: 8px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .col-header { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #718096; padding: 8px 12px; background: #e2e8f0; border-radius: 8px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
     .col-header span { font-size: 1rem; }
     .category-section { margin-bottom: 24px; }
-    .category-title { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #718096; padding: 0 0 8px 0; border-bottom: 1px solid #1e2535; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+    .category-title { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #718096; padding: 0 0 8px 0; border-bottom: 1px solid #cbd5e0; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
     .news-grid { display: grid; gap: 10px; }
-    .news-card { background: #141820; border: 1px solid #1e2535; border-radius: 10px; padding: 14px 16px; transition: border-color 0.2s, background 0.2s; }
-    .news-card:hover { border-color: #3a7bd5; background: #161d2c; }
-    .news-card.fresh { border-left: 3px solid #68d391; }
+    .news-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; transition: border-color 0.2s, background 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    .news-card:hover { border-color: #4299e1; background: #f7faff; box-shadow: 0 2px 8px rgba(66,153,225,0.12); }
+    .news-card.fresh { border-left: 3px solid #38a169; }
     .news-card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
-    .source-tag { font-size: 0.68rem; font-weight: 600; background: #1a3050; color: #63b3ed; padding: 1px 7px; border-radius: 4px; white-space: nowrap; }
-    .news-date { font-size: 0.68rem; color: #4a5568; }
-    .fresh-badge { font-size: 0.62rem; font-weight: 700; background: #1a3325; color: #68d391; padding: 1px 6px; border-radius: 4px; }
-    .news-title { font-size: 0.9rem; font-weight: 600; color: #e2e8f0; line-height: 1.45; margin-bottom: 6px; }
-    .news-summary { font-size: 0.82rem; color: #8a9ab5; line-height: 1.65; }
-    .news-link { display: inline-flex; align-items: center; gap: 3px; font-size: 0.73rem; color: #4a90d9; margin-top: 8px; text-decoration: none; }
-    .news-link:hover { color: #63b3ed; text-decoration: underline; }
-    footer { text-align: center; padding: 20px; color: #4a5568; font-size: 0.75rem; border-top: 1px solid #1e2535; margin-top: 10px; }
+    .source-tag { font-size: 0.68rem; font-weight: 600; background: #ebf8ff; color: #2b6cb0; padding: 1px 7px; border-radius: 4px; white-space: nowrap; }
+    .news-date { font-size: 0.68rem; color: #a0aec0; }
+    .fresh-badge { font-size: 0.62rem; font-weight: 700; background: #c6f6d5; color: #276749; padding: 1px 6px; border-radius: 4px; }
+    .news-title { font-size: 0.9rem; font-weight: 600; color: #2d3748; line-height: 1.45; margin-bottom: 6px; }
+    .news-summary { font-size: 0.82rem; color: #718096; line-height: 1.65; }
+    .news-link { display: inline-flex; align-items: center; gap: 3px; font-size: 0.73rem; color: #3182ce; margin-top: 8px; text-decoration: none; }
+    .news-link:hover { color: #2b6cb0; text-decoration: underline; }
+    footer { text-align: center; padding: 20px; color: #a0aec0; font-size: 0.75rem; border-top: 1px solid #e2e8f0; margin-top: 10px; }
     @media (max-width: 768px) { .two-col-layout { grid-template-columns: 1fr; } header h1 { font-size: 1.2rem; } }
   </style>
 </head>
