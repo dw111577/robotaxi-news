@@ -21,9 +21,11 @@
     .news-grid { display: grid; gap: 10px; }
     .news-card { background: #141820; border: 1px solid #1e2535; border-radius: 10px; padding: 14px 16px; transition: border-color 0.2s, background 0.2s; }
     .news-card:hover { border-color: #3a7bd5; background: #161d2c; }
+    .news-card.fresh { border-left: 3px solid #68d391; }
     .news-card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
     .source-tag { font-size: 0.68rem; font-weight: 600; background: #1a3050; color: #63b3ed; padding: 1px 7px; border-radius: 4px; white-space: nowrap; }
     .news-date { font-size: 0.68rem; color: #4a5568; }
+    .fresh-badge { font-size: 0.62rem; font-weight: 700; background: #1a3325; color: #68d391; padding: 1px 6px; border-radius: 4px; }
     .news-title { font-size: 0.9rem; font-weight: 600; color: #e2e8f0; line-height: 1.45; margin-bottom: 6px; }
     .news-summary { font-size: 0.82rem; color: #8a9ab5; line-height: 1.65; }
     .news-link { display: inline-flex; align-items: center; gap: 3px; font-size: 0.73rem; color: #4a90d9; margin-top: 8px; text-decoration: none; }
@@ -42,169 +44,186 @@
   <div class="col-left">
     <div class="col-header"><span>🌍</span> 海外ニュース</div>
 
+    <!-- Waymo / 米国 -->
     <div class="category-section">
       <h2 class="category-title"><span>🇺🇸</span> Waymo / 米国</h2>
       <div class="news-grid">
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
             <span class="source-tag">Electrek</span>
             <span class="news-date">2026-03-18</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">元Uber CEO「WaymoはTeslaより明らかに先行」ロボタクシー競争を語る</div>
-          <div class="news-summary">元Uber CEOのトラビス・カラニック氏が、WaymoはTeslaを明らかにリードしていると発言。Waymoは現在約3,000台の車両を全米で運行中で、Teslaのオースティン試験運行での44台とは対照的。カラニック氏はWaymoの今後の課題は技術ではなく「製造・スケール・緊迫感」だと指摘した。</div>
+          <div class="news-title">元Uber CEO「WaymoはTeslaより明らかに先行」――ChatGPTモーメントが来なければ追いつけない</div>
+          <div class="news-summary">元Uber CEOのトラビス・カラニック氏が、Waymoはロボタクシー競争でTeslaを「明らかに」リードしていると語った。Waymoの全米フリート約3,000台に対し、TeslaはオースティンでModel Y 44台を試験中に過ぎず、カラニック氏はTeslaには「ChatGPTモーメント」が必要だと指摘した。</div>
           <a href="https://electrek.co/2026/03/18/former-uber-ceo-kalanick-waymo-obviously-ahead-tesla-robotaxi-chatgpt-moment/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">CNBC</span>
-            <span class="news-date">2026-02-12</span>
+            <span class="source-tag">Fortune</span>
+            <span class="news-date">2026-03-16</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">Waymo、次世代「Ojai」ロボタクシーの展開を開始――センサー数42%削減でコスト半減</div>
-          <div class="news-summary">Waymoが第6世代自動運転システムを搭載した新型ロボタクシー「Ojai」の展開を開始した。中国メーカーGeely製のベース車両を使用し、センサー数を42%削減してハードウェアコストを2万ドル以下に抑えた。Magna社との製造パートナーシップにより2026年末までに2,000台以上の生産を目指す。</div>
-          <a href="https://www.cnbc.com/2026/02/12/waymo-begins-deploying-next-gen-ojai-robotaxis-to-extend-its-us-lead.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">Waymo共同CEO「ロボタクシーは雇用を奪っていない」――整備・運用など新たな職種を創出</div>
+          <div class="news-summary">Waymoの共同CEOテケドラ・マワカナ氏が、複数の商業市場でロボタクシーを数年展開した結果、雇用消失は確認されていないと述べた。自動運転のインフラ整備・センサー校正・オペレーターなど、大学進学不要の職種を各地域にもたらしていると強調した。</div>
+          <a href="https://fortune.com/2026/03/16/waymo-co-ceo-tekedra-mawakana-robotaxis-arent-eliminating-human-jobs-people-need-change-tired-calibrate-sensors/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+        </div>
+
+        <div class="news-card fresh">
+          <div class="news-card-meta">
+            <span class="source-tag">Hoodline</span>
+            <span class="news-date">2026-03-15</span>
+            <span class="fresh-badge">NEW</span>
+          </div>
+          <div class="news-title">SF乗客がWaymoロボタクシー内に閉じ込め――デモ隊が車を包囲、「安全停止」が裏目に</div>
+          <div class="news-summary">サンフランシスコで反自動化デモ隊がWaymoロボタクシーを取り囲み、乗客が車内に閉じ込められる事態が発生した。人間より安全とされる「障害物検出で停止」機能が逆に脱出を妨げる形となり、安全設計の盲点として注目を集めている。Waymoはソフトウェアの改善策を検討中だ。</div>
+          <a href="https://hoodline.com/2026/03/sf-rider-locked-in-terror-ride-as-mob-attacks-waymo-robotaxi/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
         <div class="news-card">
           <div class="news-card-meta">
             <span class="source-tag">TechCrunch</span>
-            <span class="news-date">2026-02-02</span>
+            <span class="news-date">2026-02-19</span>
           </div>
-          <div class="news-title">Waymo、160億ドルを調達――評価額1,260億ドルで東京・ロンドンへ国際展開</div>
-          <div class="news-summary">WaymoがシリーズD相当で160億ドルの大型資金調達を完了し、評価額が1,260億ドルに達した。資金は国際展開加速のために使われ、東京とロンドンを最初の海外市場として選定。東京では日本交通・GOとのパートナーシップで港区など都内7区でデータ収集中だ。</div>
-          <a href="https://techcrunch.com/2026/02/02/waymo-raises-16-billion-round-to-scale-robotaxi-fleet-london-tokyo/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
-        </div>
-
-        <div class="news-card">
-          <div class="news-card-meta">
-            <span class="source-tag">Mexico Business News</span>
-            <span class="news-date">2026-01-15</span>
-          </div>
-          <div class="news-title">Waymo、週100万回ライドを2026年末に目標――現在は週40万回ペースで拡大中</div>
-          <div class="news-summary">Waymoは現在10都市で完全無人ライドを提供しており、週約40万回のライドを達成している。2026年末までに週100万回を目指し、ダラス・デンバー・デトロイト・ヒューストンなど10都市以上に新規展開を計画。2025年に1,500万回のライドを提供しており、人間ドライバーより重傷事故が90%少ないという。</div>
-          <a href="https://mexicobusiness.news/automotive/news/waymo-aims-1-million-weekly-us-robotaxi-rides-2026" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">ニューヨーク州知事、ロボタクシー拡大法案を撤回――Waymoの州内展開に暗雲</div>
+          <div class="news-summary">ニューヨーク州のキャシー・ホークル知事が、州内でロボタクシーを合法化する法改正案を取り下げた。Waymoは現在マンハッタンで3月末まで安全員同乗の限定テストを実施中で、商業展開の道筋は不透明なまま。ニューヨーク市場は米国最大の配車市場であり、各社の動向が注目される。</div>
+          <a href="https://techcrunch.com/2026/02/19/new-york-hits-the-brakes-on-robotaxi-expansion-plan/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
       </div>
     </div>
 
+    <!-- Tesla / EV各社 -->
     <div class="category-section">
       <h2 class="category-title"><span>⚡</span> Tesla / EV各社</h2>
       <div class="news-grid">
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">Electrek</span>
-            <span class="news-date">2026-02-17</span>
+            <span class="source-tag">Teslarati</span>
+            <span class="news-date">2026-03-17</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">Tesla、初号Cybercab（ステアリングホイールなし）をテキサス工場で完成――自律走行の課題は未解決</div>
-          <div class="news-summary">TeslaがGigafactory Texasで初号Cybercabの生産を完了したと発表。ステアリングホイールもペダルもない2人乗りEVで、4月からの量産開始を目指す。ただしFSD（完全自動運転）の完成度には疑問が残り、試験中の車両には規制要件を満たすためのステアリングが装備されている。</div>
-          <a href="https://electrek.co/2026/02/17/tesla-rolls-first-steering-wheel-less-cybercab-unit-off-the-line-before-solving-autonomy/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">Tesla Cybercab、週数百台ペースの量産ラインを設計中――4月量産開始に向け最終調整</div>
+          <div class="news-summary">TeslaがGigafactory Texasに構築中のCybercab生産ラインは、週数百台を目標に設計されていると報じられた。4月の量産開始に向け最終調整が進むが、ステアリングホイールのない車両の規制除外申請はNHTSAにまだ提出されていない。</div>
+          <a href="https://www.teslarati.com/tesla-cybercab-line-targeting-hundreds-weekly-report/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">InsideEVs</span>
-            <span class="news-date">2026-02-10</span>
+            <span class="source-tag">Austin Today</span>
+            <span class="news-date">2026-03-12</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">Tesla Cybercab量産、イーロン・マスクが2026年4月スタートを確認</div>
-          <div class="news-summary">イーロン・マスクCEOがCybercabの量産を2026年4月に開始すると正式に確認した。価格は約3万ドル（約450万円）を想定し、35kWhバッテリーで200マイルの航続距離を持つ。製造サイクルは「10秒以下」を目指す家電製品ライクな生産方式を採用するとしている。</div>
-          <a href="https://insideevs.com/news/778232/tesla-cybercab-production-april-2026/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">Tesla、オースティンでCybercabの公道走行を開始――ステアリングなし車両が初めて街中を走る</div>
+          <div class="news-summary">Teslaがオースティン市内でステアリングホイールもペダルもないCybercabの公道テストを開始した。現行のオースティン・ロボタクシーはModel Y約40台でサービス中だが、Cybercabの本格投入で体験が大きく変わる見通し。1乗車4.20ドルの暫定価格設定でサービス展開中だ。</div>
+          <a href="https://nationaltoday.com/us/tx/austin/news/2026/03/12/tesla-unveils-cybercab-a-steering-wheel-free-autonomous-vehicle/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
             <span class="source-tag">Newsweek Japan</span>
             <span class="news-date">2026-03-16</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">UberとNVIDIA、ロボタクシー世界28都市展開へ提携――2027年ロサンゼルス・SF先行開始</div>
-          <div class="news-summary">UberとNVIDIAが自動運転ロボタクシーを世界展開する提携を発表。NVIDIAの自動運転ソフトウェアを搭載した車両をUberのネットワークに2027年にロサンゼルスとサンフランシスコで導入し、2028年までに北米・欧州・オーストラリア・アジアの28都市に拡大する計画だ。</div>
+          <div class="news-title">Uber × NVIDIA、GTC 2026でロボタクシー世界28都市展開を正式発表</div>
+          <div class="news-summary">NVIDIA GTC 2026でジェンスン・ファンCEOが、UberとのロボタクシーAVソフトウェア契約の詳細を発表。2027年にLAとサンフランシスコで始動し、2028年までに北米・欧州・オーストラリア・アジア4大陸28都市に展開する。ファン氏は「自動運転のChatGPTモーメントが来た」と宣言した。</div>
           <a href="https://www.newsweekjapan.jp/headlines/business/2026/03/590807.php" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
       </div>
     </div>
 
+    <!-- 中国・欧州・その他 -->
     <div class="category-section">
       <h2 class="category-title"><span>🌏</span> 中国・欧州・その他</h2>
       <div class="news-grid">
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">South China Morning Post</span>
-            <span class="news-date">2026-03-10</span>
+            <span class="source-tag">StockTitan</span>
+            <span class="news-date">2026-03-18</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">Pony.ai × トヨタ、第7世代ロボタクシーを中国で量産開始――2026年中に1,000台超</div>
-          <div class="news-summary">Pony.aiとトヨタが共同で第7世代ロボタクシーの量産を開始した。ベース車両はbZ4Xで、2026年中に1,000台以上の生産を目指す。同世代の自動運転キットのコストは前世代比70%削減を実現し、広州での都市単位での損益分岐点を達成したという。</div>
-          <a href="https://www.scmp.com/business/china-business/article/3342953/pony-ai-and-toyota-roll-out-mass-produced-robotaxis-chinas-autonomous-drive-push" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">Pony.ai、第7世代ロボタクシー100台超をChenqi Mobilityに納車――中国最大規模の商業展開へ</div>
+          <div class="news-summary">Pony.aiが3月18日、広州Chenqi Mobilityへ第7世代ロボタクシー（GAC AION Vベース）100台超の初回納車を発表。Chenqiのライドヘイリングプラットフォーム「OnTime」に組み込まれ、近く商業運行を開始する。自動運転キットのコストは前世代比70%減で、設計寿命は60万kmに達する。</div>
+          <a href="https://www.stocktitan.net/news/PONY/pony-ai-and-chenqi-mobility-launch-joint-robotaxi-fleet-with-initial-reem0jg3e6fb.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">TechCrunch</span>
-            <span class="news-date">2025-11-25</span>
+            <span class="source-tag">GlobeNewswire</span>
+            <span class="news-date">2026-03-17</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">Pony.ai、2026年末までにグローバルフリートを3,000台超へ拡大</div>
-          <div class="news-summary">Pony.aiが2026年末までにロボタクシーのグローバルフリートを現在の1,000台から3,000台以上に拡大する計画を発表した。中国主要都市への展開に加え、ドバイ・アブダビ・シンガポール・韓国・ルクセンブルクなどにも展開を拡大。欧州ではステランティスとPeugeot e-Travellerベースの試験運行を進める。</div>
-          <a href="https://techcrunch.com/2025/11/25/chinas-pony-ai-plans-to-triple-global-robotaxi-fleet-by-the-end-of-2026/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">WeRide、GTC 2026でロボタクシーGXRを披露――東南アジア展開を加速、シンガポール4/1サービス開始</div>
+          <div class="news-summary">WeRideがNVIDIA GTC 2026でNVIDIA DRIVE Hyperion搭載の新型ロボタクシーGXRを発表。Grabとの戦略的提携によりシンガポール・パンゴール地区で4月1日から公道AVサービスを開始する。NVIDIA DRIVE AGX Thorを活用したHPC 3.0システムで、自動運転スイートのコストを50%削減した。</div>
+          <a href="https://www.globenewswire.com/news-release/2026/03/17/3256841/0/en/WeRide-Showcases-Robotaxi-GXR-Powered-by-NVIDIA-DRIVE-Hyperion-Platform-at-NVIDIA-GTC-2026-Accelerating-Southeast-Asia-Expansion-and-Beyond.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">Investorsobserver</span>
-            <span class="news-date">2026-02-20</span>
+            <span class="source-tag">TechNode</span>
+            <span class="news-date">2026-03-17</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">WeRide、ベルギー・ルーヴェンでロボバス展開――欧州11市場目に参入</div>
-          <div class="news-summary">WeRideがベルギーのルーヴェン市でロボバスフリートを展開開始し、欧州11市場目への進出を果たした。フランス・スペイン・スイスに続く欧州展開で、フランダース公共交通会社De Lijnとのパートナーシップによるもの。中東ではUAEラスアルハイマ首長国とも独占契約を締結している。</div>
-          <a href="https://investorsobserver.com/news/stock-update/weride-and-pony-ai-are-aggressively-pushing-robotaxis-outside-china/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">BYD・Geely、NVIDIA DRIVE HyperionでLevel 4自動運転を正式採用――GTC 2026で発表</div>
+          <div class="news-summary">NVIDIA GTC 2026でBYDとGeelyがNVIDIA DRIVE HyperionプラットフォームによるLevel 4自動運転プログラムの採用を発表した。日産・現代自動車・いすゞも同プラットフォームに参加し、計7社（Mercedes・トヨタ・GMを含む）年間合計約1,800万台の生産能力がNVIDIAの自動運転に対応する。</div>
+          <a href="https://technode.com/2026/03/17/gtc-2026-byd-and-geely-adopt-nvidia-drive-hyperion-for-level-4-autonomous-vehicle-programs/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">Rest of World</span>
-            <span class="news-date">2026-03-05</span>
+            <span class="source-tag">PR Newswire</span>
+            <span class="news-date">2026-03-17</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">中国AV各社が中東をリード――Baidu・WeRide・Pony.aiが湾岸諸国で優位に立つ</div>
-          <div class="news-summary">中国の自動運転企業がアラブ首長国連邦・サウジアラビア・カタールなど中東湾岸地域のロボタクシー市場を席巻しつつある。Waymo・Cruiseなど米国勢が国内展開に注力する間、Baidu Apollo Go・WeRide・Pony.aiが商業サービスを積極的に展開。データ主権の保証や現地化支援などが強みとなっている。</div>
-          <a href="https://restofworld.org/2026/robotaxis-gulf-china/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">DeepRoute.ai、GTC 2026で400億パラメータのVLA基盤モデルを発表――データ処理を5日から12時間に圧縮</div>
+          <div class="news-summary">DeepRoute.aiがNVIDIA GTC 2026で自動運転向け400億パラメータのVision-Language-Action基盤モデルを発表した。知覚・推論・行動を統合したアーキテクチャで、自己判断の評価も可能。データ処理サイクルを従来の5日超から約12時間に短縮し、スケーラブルなLevel 4展開を加速する。</div>
+          <a href="https://www.prnewswire.com/news-releases/deeprouteai-presents-40b-vision-language-action-foundation-model-at-nvidia-gtc-2026-accelerating-autonomous-driving-at-scale-302716046.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+        </div>
+
+        <div class="news-card fresh">
+          <div class="news-card-meta">
+            <span class="source-tag">Gasgoo</span>
+            <span class="news-date">2026-03-14</span>
+            <span class="fresh-badge">NEW</span>
+          </div>
+          <div class="news-title">DiDi × GAC AION共同開発ロボタクシーR2、北京で公道テスト許可を取得</div>
+          <div class="news-summary">DiDi自動運転とGAC AIONが共同開発したロボタクシーR2が北京市で公道テストライセンスを取得。1月の広州に続く2都市目の許可取得で、複雑な都市環境での自律走行検証を本格化する。DiDiのLevel 4スタックとGAC AIONの車両製造ノウハウを融合した無人ライドヘイリング専用設計だ。</div>
+          <a href="https://autonews.gasgoo.com/articles/news/didi-gac-aions-co-developed-robotaxi-r2-secures-beijing-road-test-permit-to-expand-autonomous-driving-trials-2033437125989527553" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
       </div>
     </div>
 
+    <!-- 規制・政策（海外） -->
     <div class="category-section">
-      <h2 class="category-title"><span>📋</span> 規制・政策（海外）</h2>
+      <h2 class="category-title"><span>📋</span> 規制・政策・技術（海外）</h2>
       <div class="news-grid">
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">ACT News</span>
-            <span class="news-date">2026-02-05</span>
+            <span class="source-tag">NVIDIA Newsroom</span>
+            <span class="news-date">2026-03-19</span>
+            <span class="fresh-badge">TODAY</span>
           </div>
-          <div class="news-title">米議会、「SELF DRIVE法2026」を正式導入――自動運転の初の連邦法制化へ</div>
-          <div class="news-summary">米下院でSELF DRIVE法2026（H.R. 7390）が正式に提出され、自動運転専用の初の連邦法制化に向けた動きが本格化した。NHTSAの権限拡大、メーカーの安全ケース提出義務、サイバーセキュリティ要件などを盛り込む。安全団体からは自己認証方式への懸念も示されている。</div>
-          <a href="https://www.act-news.com/news/house-introduces-discussion-draft-of-self-drive-act-of-2026/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">NVIDIA、自動運転向けオープンAIモデル「Alpamayo」を公開――人間的な判断・推論を実現</div>
+          <div class="news-summary">NVIDIAが自動運転向けの初のオープンソースVLA（Vision-Language-Action）推論モデル「Alpamayo」を発表した。長テール課題に対応し、車両が知覚・推論・行動を人間的判断で実行できる。JLR・Lucid・UberやBerkeley DeepDriveなどがLevel 4展開ロードマップの加速に活用予定だ。</div>
+          <a href="https://nvidianews.nvidia.com/news/alpamayo-autonomous-vehicle-development" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">CBT News</span>
-            <span class="news-date">2026-03-01</span>
+            <span class="source-tag">CNBC</span>
+            <span class="news-date">2026-03-16</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">米DOT、自動運転車の安全基準を近代化――ワイパー・シフト規制を緩和へ</div>
-          <div class="news-summary">トランプ政権下の米国運輸省が2026年春に自動運転車向けの新規則3本を提案する方針を発表した。ウインドシールドワイパーやシフトレバーなど人間向け安全基準をAV向けに見直す方向で、TeslaやWaymoなどの規制面での負担軽減が期待される。連邦規制の近代化がAV普及の追い風となる可能性がある。</div>
-          <a href="https://www.cbtnews.com/dot-moves-to-modernize-safety-standards-for-self-driving-cars/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
-        </div>
-
-        <div class="news-card">
-          <div class="news-card-meta">
-            <span class="source-tag">UNECE</span>
-            <span class="news-date">2026-01-23</span>
-          </div>
-          <div class="news-title">国連、自動運転システムの世界技術基準（GTR）を提案――2026年6月に採択予定</div>
-          <div class="news-summary">国連欧州経済委員会（UNECE）の自動運転作業部会（GRVA）が自動運転システムに関するグローバル技術規制の草案を提案した。2026年6月23〜26日のWP.29会議での採択が予定され、米国NHTSAもパブリックコメントを募集中。中国も同規制の構造に基づいて国内標準を策定する意向を示している。</div>
-          <a href="https://unece.org/sustainable-development/press/un-announces-global-regulation-facilitate-safe-introduction-self" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">NVIDIA、日産・BYD・現代・Geely・いすゞに自動運転プラットフォームを拡大――GTC 2026で発表</div>
+          <div class="news-summary">NVIDIA GTC 2026でジェンスン・ファン氏が、Drive Hyperionプラットフォームの新パートナーとして日産・BYD・現代自動車・Geely・いすゞを発表した。既存のMercedes・トヨタ・GMと合わせ7社体制となり、自動運転対応可能な年間生産台数が大幅に拡大する。</div>
+          <a href="https://www.cnbc.com/2026/03/16/nvidia-hyundai-byd-nissan-self-driving-tech.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
       </div>
@@ -215,122 +234,121 @@
   <div class="col-right">
     <div class="col-header"><span>🇯🇵</span> 国内ニュース</div>
 
+    <!-- 実証実験・サービス -->
     <div class="category-section">
       <h2 class="category-title"><span>🚕</span> 実証実験・サービス</h2>
       <div class="news-grid">
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">自動運転ラボ</span>
-            <span class="news-date">2026-03-01</span>
+            <span class="source-tag">Auto Connected Car</span>
+            <span class="news-date">2026-03-17</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">Waymo、東京・都心7区で公道データ収集中――2026年サービス展開を視野に</div>
-          <div class="news-summary">Waymoが日本交通・GOとのパートナーシップで東京都内での公道走行を継続中。港区・新宿区・渋谷区・千代田区・中央区・品川区・江東区の7区でデータ収集を実施し、左側通行への適応や地域交通パターンの学習を進めている。Waymoは東京を海外初進出都市の一つとして明確に位置づけている。</div>
-          <a href="https://jidounten-lab.com/u_58676" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">Wayve・Uber・日産が東京でロボタクシー実証計画――日産LEAFにWayve AI Driver搭載でUberプラットフォームに参入</div>
+          <div class="news-summary">Wayve・Uber・日産が2026年後半に東京でのロボタクシー実証パイロットを計画していることが明らかになった。日産LEAFにWayveのAI Driverを搭載し、Uberのプラットフォームで配車するスキームで、QualcommとWayveはSnapdragon Rideとの統合も進める。</div>
+          <a href="https://www.autoconnectedcar.com/2026/03/autonomous-self-driving-vehicle-news-uber-torc-stradvision-elektrobit-mobileye-waymo-harbinger-phantom-ai-robo-ai-chinasky-car-trading-fze-tier-iv-brainchip-raytheon-aeva-tesla/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+        </div>
+
+        <div class="news-card fresh">
+          <div class="news-card-meta">
+            <span class="source-tag">36Kr Japan</span>
+            <span class="news-date">2026-03-15</span>
+            <span class="fresh-badge">NEW</span>
+          </div>
+          <div class="news-title">Pony.ai、日本市場参入を模索――運行コストが「人間以下」に、トヨタとの協業背景に</div>
+          <div class="news-summary">トヨタが出資するPony.aiが日本市場への参入を模索していることが報じられた。第7世代ロボタクシーのコストはすでに広州で人間ドライバー運行費用を下回り、ビジネスモデルの実証が完了している。トヨタとのbZ4Xベース量産体制を背景に、日本での実証実験も視野に入れているとみられる。</div>
+          <a href="https://36kr.jp/375431/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+        </div>
+
+        <div class="news-card fresh">
+          <div class="news-card-meta">
+            <span class="source-tag">ニュースイッチ</span>
+            <span class="news-date">2026-03-10</span>
+            <span class="fresh-badge">NEW</span>
+          </div>
+          <div class="news-title">政府、自動運転普及ロードマップを更新――ロボタクシーは2026年初頭実用化、課題を整理</div>
+          <div class="news-summary">政府がロボタクシーを含む自動運転サービスの普及ロードマップを更新し、2026年初頭実用化に向けた工程表を明示した。有識者会議が規制緩和・事故時の被害補償などの課題を1年程度で結論を出し、早期の社会実装を目指す方針。米中の外資企業も日本市場解禁を見据えて注視している。</div>
+          <a href="https://newswitch.jp/p/41841" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
         <div class="news-card">
           <div class="news-card-meta">
-            <span class="source-tag">Carconnect</span>
-            <span class="news-date">2026-02-15</span>
+            <span class="source-tag">スマートモビリティJP</span>
+            <span class="news-date">2026-03-05</span>
           </div>
-          <div class="news-title">2026年は日本「自動運転社会実装元年」――永平寺町・ひたちBRTでレベル4定常運行</div>
-          <div class="news-summary">日本政府が「社会実装元年」と位置づける2026年、福井県永平寺町やひたちBRTでレベル4自動運転の定常運行が開始され、実証フェーズから実用フェーズへの転換が鮮明になった。一方、市販車は依然としてレベル2が最高水準であり、完全自動運転の一般普及にはまだ段階的なアプローチが必要だ。</div>
-          <a href="https://carconnect.jp/column/ev/autonomous-driving-japan/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
-        </div>
-
-        <div class="news-card">
-          <div class="news-card-meta">
-            <span class="source-tag">中日BIZナビ</span>
-            <span class="news-date">2026-02-20</span>
-          </div>
-          <div class="news-title">日産、横浜みなとみらいで20台規模の自動運転サービス実証――2027年商用化へ</div>
-          <div class="news-summary">日産が横浜みなとみらい地区・桜木町・関内を含むエリアで、セレナベースの自動運転車両による20台規模のサービス実証を2025〜2026年度に実施予定。セーフティドライバーが同乗するかたちで実証を積み、2027年度の無人運転モビリティサービス提供を目指している。</div>
-          <a href="https://biz.chunichi.co.jp/news/article/10/114200/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
-        </div>
-
-        <div class="news-card">
-          <div class="news-card-meta">
-            <span class="source-tag">日本共済協会</span>
-            <span class="news-date">2025-11-01</span>
-          </div>
-          <div class="news-title">ロボタクシー社会実装の「社会受容」の壁――高齢化・ドライバー不足が追い風に</div>
-          <div class="news-summary">日本共済協会がロボタクシーの社会実装における「社会受容性」の課題を分析したレポートを公開。高齢化の進展とドライバー不足という社会課題がロボタクシー導入の強力な動機になる一方、事故発生時の責任の所在や心理的な信頼感の醸成が普及への課題として挙げられている。</div>
-          <a href="https://www.jcia.or.jp/webkyosaitohoken/2025/11/251101.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">ロボタクシー解禁へのカウントダウン――米中外資も注視する日本市場の最新事情</div>
+          <div class="news-summary">2026年内に事実上の解禁が見込まれる日本のロボタクシー市場に、WaymoやPony.aiなど米中企業が熱い視線を送っている。ティアフォーや日産など国内勢も実証実験を加速しており、高齢化・ドライバー不足という社会課題が追い風となって導入機運が高まっている。</div>
+          <a href="https://smart-mobility.jp/_ct/17769251/p3" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
       </div>
     </div>
 
+    <!-- メーカー・技術 -->
     <div class="category-section">
       <h2 class="category-title"><span>🏭</span> メーカー・技術</h2>
       <div class="news-grid">
 
-        <div class="news-card">
+        <div class="news-card fresh">
+          <div class="news-card-meta">
+            <span class="source-tag">CNBC</span>
+            <span class="news-date">2026-03-16</span>
+            <span class="fresh-badge">NEW</span>
+          </div>
+          <div class="news-title">日産、NVIDIA Drive HyperionでLevel 4自動運転プログラムに参加――GTC 2026で正式発表</div>
+          <div class="news-summary">日産がNVIDIA GTC 2026でDrive Hyperionプラットフォームの新パートナーとして正式発表された。現在進行中のWayveとの次世代プロパイロット開発と合わせ、NVIDIAのロボタクシー対応プラットフォームも採用することで自動運転開発が二軸で進む。東京でのUber/Wayveパイロットにも日産車両が使用予定だ。</div>
+          <a href="https://www.cnbc.com/2026/03/16/nvidia-hyundai-byd-nissan-self-driving-tech.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+        </div>
+
+        <div class="news-card fresh">
           <div class="news-card-meta">
             <span class="source-tag">自動運転ラボ</span>
-            <span class="news-date">2026-02-01</span>
+            <span class="news-date">2026-03-14</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">ホンダ、2026年に自動運転タクシーのサービス開始を計画――Honda 0にレベル3搭載</div>
-          <div class="news-summary">ホンダが2026年中に自動運転タクシーのサービス開始を予定していることが明らかになった。また、北米向け新型EV「Honda 0（ゼロ）シリーズ」には独自AIによる次世代レベル3技術を搭載し、ドライバーの意図を先読みして危険な挙動を未然に防ぐ「AIによる自動運転の予兆制御」を世界初実装するという。</div>
-          <a href="https://jidounten-lab.com/u_45951" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">WaymoのロボタクシーにSFで「バグ祭り」――ループ走行・停止不能など複数の不具合が同時発生</div>
+          <div class="news-summary">サンフランシスコでWaymoのロボタクシーが同時多発的な不具合を起こす事象が報告された。車両がループ走行を繰り返したり停止不能になるなど複数の問題が重なり「バグ祭り」とSNSで話題に。WaymoはソフトウェアアップデートとNHTSAへの報告で対応中だ。</div>
+          <a href="https://jidounten-lab.com/u_59226" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
         <div class="news-card">
           <div class="news-card-meta">
-            <span class="source-tag">LE VOLANT WEB</span>
-            <span class="news-date">2025-12-11</span>
+            <span class="source-tag">Honda Global</span>
+            <span class="news-date">2026-03-01</span>
           </div>
-          <div class="news-title">日産、英Wayve社と協業――AIで「阿吽の呼吸」を実現する次世代プロパイロットを2027年投入</div>
-          <div class="news-summary">日産が英国のAIスタートアップWayve社と協業し、2027年投入予定の「次世代プロパイロット」を開発中と発表。E2E（エンドツーエンド）AIによって市街地でもドライバーの意図を先読みする自動運転を目指す。現行のProPILOT 2.0で日本メーカーとして初の高速道路ハンズオフを実現した実績を持つ。</div>
-          <a href="https://levolant.jp/2025/12/11/415042/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
-        </div>
-
-        <div class="news-card">
-          <div class="news-card-meta">
-            <span class="source-tag">日経XTECH</span>
-            <span class="news-date">2026-01-20</span>
-          </div>
-          <div class="news-title">E2E自動運転でテスラが量産先行――日本メーカーの巻き返し策は？</div>
-          <div class="news-summary">テスラがカメラのみを使ったE2E（エンドツーエンド）自動運転でロボタクシー量産に突き進む中、日本メーカーのE2E対応の遅れが指摘されている。日産はWayve社、ホンダは独自AI開発と連携してE2E開発を加速しているが、テスラやWaymoの先行をどう縮めるかが課題となっている。</div>
-          <a href="https://xtech.nikkei.com/atcl/nxt/column/18/03431/121600007/" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
-        </div>
-
-        <div class="news-card">
-          <div class="news-card-meta">
-            <span class="source-tag">自動運転ラボ</span>
-            <span class="news-date">2026-03-10</span>
-          </div>
-          <div class="news-title">トヨタ、自動運転タクシー参入を見送りか――バス・シャトル路線を軸に展開方針</div>
-          <div class="news-summary">トヨタが個人向けロボタクシー事業への参入を見送る可能性が報じられている。代わりに自動運転バスやシャトルサービスに注力する方向性が見え、Pony.aiとの協業（中国でのbZ4Xベース量産）を除けば国内ロボタクシー参入の具体的な動きは見られない。レクサスブランドでは2026年に次世代EV「LF-ZC」を市場投入予定だ。</div>
-          <a href="https://jidounten-lab.com/u_59736" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">ホンダ、日本での自動運転タクシーサービスを2026年内に開始予定――Honda 0シリーズにレベル3搭載</div>
+          <div class="news-summary">ホンダが2026年内に日本での自動運転タクシーサービス開始を計画中。北米向けHonda 0（ゼロ）シリーズには独自AI「予兆制御」技術を搭載した次世代レベル3システムを導入し、ドライバーの意図を先読みして危険を回避する「世界初」の機能を実装する予定だ。</div>
+          <a href="https://global.honda/jp/news/2023/c231019a.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
       </div>
     </div>
 
+    <!-- 規制・政策（日本） -->
     <div class="category-section">
       <h2 class="category-title"><span>📋</span> 規制・政策（日本）</h2>
       <div class="news-grid">
 
-        <div class="news-card">
+        <div class="news-card fresh">
           <div class="news-card-meta">
-            <span class="source-tag">国土交通省</span>
-            <span class="news-date">2025-09-01</span>
+            <span class="source-tag">自動運転ラボ</span>
+            <span class="news-date">2026-03-16</span>
+            <span class="fresh-badge">NEW</span>
           </div>
-          <div class="news-title">国交省・警察庁・経産省、自動運転安全確保ガイドライン第2版を改訂――レベル4対応強化</div>
-          <div class="news-summary">国土交通省・警察庁・経済産業省が共同で「自動運転車の安全確保に関するガイドライン 第2版（令和7年9月更新）」を策定した。自動運転レベル4の車両に関するシステム責任範囲や安全水準の社会的な明確化を目的としており、許可審査の透明性確保に向けた申請書類の記載要領も公表されている。</div>
-          <a href="https://www.mlit.go.jp/jidosha/jidosha_tk7_000043.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">トヨタ、自動運転タクシーへの国内参入を「やっと」検討か――Pony.ai協業で機運高まる</div>
+          <div class="news-summary">これまでロボタクシー事業参入に慎重だったトヨタが、Pony.aiとの中国での量産協業を経て国内参入を検討し始めたと自動運転ラボが報じた。政府のロードマップ改訂や外資の参入機運が高まる中、国内最大手としての動向が自動運転普及の鍵を握るとみられている。</div>
+          <a href="https://jidounten-lab.com/u_59736" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
         <div class="news-card">
           <div class="news-card-meta">
-            <span class="source-tag">警察庁</span>
-            <span class="news-date">2026-01-15</span>
+            <span class="source-tag">国土交通省</span>
+            <span class="news-date">2026-03-01</span>
           </div>
-          <div class="news-title">警察庁、2025〜2030年の自動運転シナリオを提示――一般道レベル4や自動運転トラックを視野</div>
-          <div class="news-summary">警察庁が自動運転の中長期シナリオを提示し、2025〜2030年にかけてオーナーカーのレベル3〜4対応を段階的に拡大する方針を示した。また、一般道（特定ルート）での自動運転トラック（レベル4）の実現や走行ルートの拡大も検討されている。2026年度からは自動運転拡大に向けた調査検討委員会を本格稼働させる。</div>
-          <a href="https://www.npa.go.jp/bureau/traffic/selfdriving/index.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
+          <div class="news-title">国交省・警察庁・経産省、自動運転安全確保ガイドライン第2版を運用開始――レベル4審査基準を明確化</div>
+          <div class="news-summary">3省庁共同の「自動運転車の安全確保に関するガイドライン 第2版」の運用が本格化した。レベル4車両のシステム責任範囲・安全水準の社会的な明確化が目的で、許可申請書類の記載要領も公表。自動運転タクシーの許可審査プロセスが透明化される。</div>
+          <a href="https://www.mlit.go.jp/jidosha/jidosha_tk7_000043.html" class="news-link" target="_blank" rel="noopener">元記事を読む →</a>
         </div>
 
       </div>
